@@ -1,0 +1,50 @@
+#----- PROGRAMAS NECESSÁRIOS
+https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/7.4.33/
+https://nodejs.org/en/blog/release/v14.17.3
+https://notepad-plus-plus.org/downloads/
+
+
+#----- CRIAR O BANCO DE DADOS NO PHPMYADMIN
+Banco de dados: whaticket
+
+
+#----- BAIXAR O PROJETO WHATICKET
+https://github.com/canove/whaticket-community
+
+
+#----- PREPARAR O BACK-END
+* Antes de iniciar repare o arquivo .env
+
+npm install
+npm run build
+npx sequelize db:migrate
+npx sequelize db:seed:all
+npm start
+
+
+#----- PREPARAR O FRONT-END
+* Antes de iniciar repare o arquivo .env
+
+npm install
+npm run build
+npm start
+
+
+#----- CORRIGIR ERRO DAS CONEXÕES
+* Na raiz
+npm r whatsapp-web.js
+
+* No packjson em whatsapp-web.js colocar:
+https://github.com/Julzk/whatsapp-web.js/tarball/jkr_hotfix_7
+
+npm install
+npm run build
+npm start
+
+set NODE_OPTIONS=--openssl-legancy-provider
+
+---------------------------
+admin@whaticket.com
+admin
+
+* Código Fonte do ERP SaaS, Chatwoot, Whaticket, Press-Ticket, Evolution API validados e sem erros. Para baixar acesse: https://codigofonte.startdevbrasil.com.br
